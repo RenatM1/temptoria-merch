@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPTORIA Universe Merchandise</title>
+    <!-- Import Google Fonts for clean, modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Load Font‑Awesome for social and payment icons.  These files are
+         served from a public CDN and provide a wide range of brand and
+         interface glyphs without bundling additional image assets. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dtslT7hE4f31Y6wG+9XqMBhXiRWzB3WvQx4JB9jy9rx2DyXYaJDXpY+qz86z8HcEwC0NjvLr1G3eEb1zp1e15w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Local stylesheet controlling the layout and colour scheme -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top logo container.  The logo sits above the navigation bar and
+         is enlarged so that it does not overlap the hero image. -->
+    <div class="logo-top">
+        <img src="logo.png" alt="Temptoria Universe logo">
+    </div>
+
+    <!-- The primary navigation bar mirrors the structure of the Marvel store
+         but adopts Temptoria’s dark neon aesthetic.  Categories sit on
+         the left and social/login icons live on the right. The central logo
+         has been moved to its own container above. -->
+    <nav>
+        <div class="nav-left">
+            <a href="#">Cosplay&nbsp;Costumes</a>
+            <a href="#">Clothing</a>
+            <a href="#">Action&nbsp;Figures</a>
+            <a href="#">Homeware</a>
+        </div>
+        <div class="nav-right">
+            <!-- Social icons rendered as inline images.  Using static SVG
+                 files avoids reliance on external CDNs and makes it
+                 possible to recolour the icons via CSS filters. -->
+            <a aria-label="Instagram" href="#"><img src="instagram.svg" alt="Instagram icon"></a>
+            <a aria-label="Facebook" href="#"><img src="facebook.svg" alt="Facebook icon"></a>
+            <a aria-label="TikTok" href="#"><img src="tiktok.svg" alt="TikTok icon"></a>
+            <a aria-label="YouTube" href="#"><img src="youtube.svg" alt="YouTube icon"></a>
+            <a aria-label="Pinterest" href="#"><img src="pinterest.svg" alt="Pinterest icon"></a>
+            <!-- User account icon for sign in/registration rendered inline -->
+            <a aria-label="Sign in or register" href="#">
+                <svg class="user-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M12 12c2.7614 0 5-2.2386 5-5s-2.2386-5-5-5-5 2.2386-5 5 2.2386 5 5 5zm0 2c-3.866 0-7 1.79-7 4v3h14v-3c0-2.21-3.134-4-7-4z"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero/banner section.  The high‑resolution poster featuring Tora,
+         Takeshi and cyborg Tora spans the full width of the viewport. -->
+    <header class="hero">
+        <!-- Updated path: poster image now resides in the project root -->
+        <img src="poster.png" alt="Tora, Takeshi and cyborg Tora poster">
+    </header>
+
+    <!-- Footer: social icons on the left and payment icons on the right -->
+    <footer>
+        <div class="footer-social">
+            <a aria-label="Instagram" href="#"><img src="instagram.svg" alt="Instagram"></a>
+            <a aria-label="Facebook" href="#"><img src="facebook.svg" alt="Facebook"></a>
+            <a aria-label="TikTok" href="#"><img src="tiktok.svg" alt="TikTok"></a>
+            <a aria-label="YouTube" href="#"><img src="youtube.svg" alt="YouTube"></a>
+            <a aria-label="Pinterest" href="#"><img src="pinterest.svg" alt="Pinterest"></a>
+        </div>
+        <div class="footer-payments">
+            <img src="visa.svg" alt="Visa" aria-label="Visa">
+            <img src="mastercard.svg" alt="MasterCard" aria-label="MasterCard">
+            <img src="paypal.svg" alt="PayPal" aria-label="PayPal">
+        </div>
+    </footer>
+</body>
+</html>
